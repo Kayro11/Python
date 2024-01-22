@@ -6,9 +6,9 @@ MainLabel=['Piperf']
 window=tk.Tk()
 window.title(MainWindow)
 
-
+#找到屏幕中心点，减去窗口长宽的一半，窗口对齐到屏幕中心
 def get_ScreenSize():
-    "计算屏幕大小对应的窗口大小和位置"
+    "计算屏幕大小对应的窗口大小和位置，返回窗口（宽度，高度 ，x坐标，y坐标）"
     ScreenWidth=window.winfo_screenwidth()
     ScreenHeight=window.winfo_screenheight()
     WindowWidth=0
@@ -33,8 +33,6 @@ def get_ScreenSize():
     return WindowWidth,WindowHeight,sw,sh
 
 window.geometry("%dx%d+%d+%d" %(get_ScreenSize()))
-
-#找到屏幕中心点，减去窗口长宽的一半，窗口对齐到屏幕中心
 
 #创建标签
 MainLabel=tk.Label(window,text=MainLabel,bg='grey',font='Arial,12',width=100,height=1)
