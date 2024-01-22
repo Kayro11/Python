@@ -2,11 +2,16 @@ import tkinter as tk
 #定义后续使用的变量的值
 MainWindow=[]
 MainLabel=['Piperf']
-
+WindowWidth=500
+WindowHeight=300
 #创建绘画窗口
 window=tk.Tk()
 window.title(MainWindow)
-window.geometry('500x300')
+ScreenWidth=window.winfo_screenwidth()
+ScreenHeight=window.winfo_screenheight()
+ScreenWidth=(ScreenWidth/2)-(WindowWidth/2)
+ScreenHeight=(ScreenHeight/2)-(WindowHeight/2)
+window.geometry("%dx%d+%d+%d" %(WindowWidth,WindowHeight,ScreenWidth,ScreenHeight))#找到屏幕中心点，减去窗口长宽的一半，窗口对齐到屏幕中心
 
 #创建标签
 MainLabel=tk.Label(window,text=MainLabel,bg='grey',font='Arial,12',width=100,height=1)
