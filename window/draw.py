@@ -14,7 +14,7 @@ MainLabel.pack()
 #创建输入窗口
 entry1=tk.Entry(window,show=None,font=('Arial',14),width=20)
 entry1.place(x=20,y=50)
-entry2=tk.Entry(window,show=None,font=('Arial',14),width=2)
+entry2=tk.Entry(window,show=None,font=('Arial',14),width=8)
 entry2.place(x=200,y=50)
 #循环
 window.mainloop()
