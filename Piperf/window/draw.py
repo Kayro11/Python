@@ -24,16 +24,14 @@ def get_ScreenSize():
         WindowHeight=300
         sw=(ScreenWidth/2)-(WindowWidth/2)
         sh=(ScreenHeight/2)-(WindowHeight/2)
-        print(sw)
-        print(sh)
+
 
     else :
         WindowWidth=1000
         WindowHeight=600
         sw=(ScreenWidth/2)-(WindowWidth/2)
         sh=(ScreenHeight/2)-(WindowHeight/2)
-        print(sw)
-        print(sh)
+
     return WindowWidth,WindowHeight,sw,sh
 
 window.geometry("%dx%d+%d+%d" %(get_ScreenSize()))#传入窗口位置（宽度x高度 +x坐 +y坐标）
@@ -49,25 +47,25 @@ entry2=tk.Entry(window,show=None,font=('Arial',14),width=8)
 entry2.place(x=200,y=50)
 
 #按键变量：开始/停止
-click = True
+click = False
 click_text=tk.StringVar()
 click_text.set('开始')
-#按键状态切换函数
+
+#按键状态切换函数，click的值False表示灌包停止，True表示灌包开始
 def Click_Button():
     global click
-    if click == False :
-        click == True
-        click_text.set('开始')
-    else :
-        click == False
-        click_text.set('停止')
+    global click_text
+    if click  ==False :
+        click = True
+        click_text.set('停止')#click的值变True，按钮显示停止
+    
+    else:
+        click = False
+        click_text.set('开始')#click的值变True，按钮显示停止
 
 
 Button=tk.Button(window,textvariable=click_text,font={'Arial',12},width=10,height=1,command=Click_Button)
 Button.place(x=230,y=48)
-
-
-
 
 
 #循环
