@@ -48,5 +48,27 @@ entry1.place(x=20,y=50)
 entry2=tk.Entry(window,show=None,font=('Arial',14),width=8)
 entry2.place(x=200,y=50)
 
+#按键变量：开始/停止
+click = True
+click_text=tk.StringVar()
+click_text.set('开始')
+#按键状态切换函数
+def Click_Button():
+    global click
+    if click == False :
+        click == True
+        click_text.set('开始')
+    else :
+        click == False
+        click_text.set('停止')
+
+
+Button=tk.Button(window,textvariable=click_text,font={'Arial',12},width=10,height=1,command=Click_Button)
+Button.place(x=230,y=48)
+
+
+
+
+
 #循环
 window.mainloop()
