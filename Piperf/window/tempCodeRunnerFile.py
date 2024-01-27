@@ -1,0 +1,1 @@
+frame.pack(fill='both',side='top', expand=0)
