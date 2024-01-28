@@ -60,7 +60,7 @@ def get_ScreenSize():
 
 
     if ScreenHeight<=1080:
-        WindowWidth=500
+        WindowWidth=550
         WindowHeight=300
         sw=(ScreenWidth/2)-(WindowWidth/2)
         sh=(ScreenHeight/2)-(WindowHeight/2)
