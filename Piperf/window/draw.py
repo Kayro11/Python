@@ -1,6 +1,7 @@
 import tkinter as tk
 
 
+
 #定义后续使用的变量的值
 MainWindow=[]#显示窗口的名称
 MainLabel=['Piperf']#主横幅显示的文字
