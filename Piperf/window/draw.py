@@ -61,7 +61,7 @@ def get_ScreenSize():
 
 
     if ScreenHeight<=1080:
-        WindowWidth=500
+        WindowWidth=610
         WindowHeight=300
         sw=(ScreenWidth/2)-(WindowWidth/2)
         sh=(ScreenHeight/2)-(WindowHeight/2)
@@ -122,7 +122,7 @@ def Click_Button():
         switch_button1.config(state='disabled')
         switch_button2.config(state='disabled')
 
-        text.insert('end','=================================='+'开始'+'('+entry1.get()+':'+entry2.get()+')'+'=================================='+'\n')
+        text.insert('end','================================='+'开始'+'('+entry1.get()+':'+entry2.get()+')'+'================================='+'\n')
 
 
     else:
@@ -135,7 +135,7 @@ def Click_Button():
         switch_button1.config(state='normal')
         switch_button2.config(state='normal')
 
-        text.insert('end','=================================='+'停止'+'('+entry1.get()+':'+entry2.get()+')'+'=================================='+'\n')
+        text.insert('end','================================='+'停止'+'('+entry1.get()+':'+entry2.get()+')'+'================================='+'\n')
 
 
 Button1=tk.Button(frame3,textvariable=click_text,font={'Arial',12},width=10,height=1,command=Click_Button)
