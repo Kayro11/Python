@@ -56,8 +56,8 @@ def get_ScreenSize():
     ScreenHeight=window.winfo_screenheight()
     WindowWidth=0
     WindowHeight=0
-    print('ScreenWidth=%d' %ScreenWidth)
-    print('ScreenHeight=%d' %ScreenHeight)
+    #print('ScreenWidth=%d' %ScreenWidth)
+    #print('ScreenHeight=%d' %ScreenHeight)
 
 
     if ScreenHeight<=1080:
