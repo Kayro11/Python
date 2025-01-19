@@ -1,0 +1,13 @@
+prefix=//jarvis/Users/kayro/source/Python/Piperf/.conda/Library
+exec_prefix=//jarvis/Users/kayro/source/Python/Piperf/.conda/Library
+libdir=//jarvis/Users/kayro/source/Python/Piperf/.conda/Library/lib
+sharedlibdir=//jarvis/Users/kayro/source/Python/Piperf/.conda/Library/lib
+includedir=//jarvis/Users/kayro/source/Python/Piperf/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
