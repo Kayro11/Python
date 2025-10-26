@@ -11,7 +11,7 @@ from PyQt5.QtCore import Qt, pyqtSignal, QObject, QThread
 from PyQt5.QtGui import QFont, QPalette, QColor
 
 # 导入原有数据处理函数（确保路径正确）
-from 扫频绘图工具 import process_csv_to_html
+from Draw import process_csv_to_html
 
 
 class WorkerSignals(QObject):
